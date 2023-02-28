@@ -12,13 +12,13 @@ class CDlg : public CDialogEx
 {
 // Construction
 public:
-  CDlg(CWnd* pParent = NULL);	// standard constructor
+  CDlg(CWnd* pParent = NULL);    // standard constructor
 
 // Dialog Data
   enum { IDD = IDD_APP };
 
   protected:
-  virtual void DoDataExchange(CDataExchange* pDX);	// DDX/DDV support
+  virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
 
 
 // Implementation

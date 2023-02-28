@@ -20,10 +20,10 @@ void ZivkovicAGMM::Initalize(const BgsParams& param)
 {
   m_params = (ZivkovicParams&)param;
 
-  m_num_bands = 3;							//always 3 - not implemented for other values!
-  m_bg_threshold = 0.75f;				//1-cf from the paper
-  m_variance = 36.0f;						// variance for the new mode
-  m_complexity_prior = 0.05f;		// complexity reduction prior constant
+  m_num_bands = 3;                            //always 3 - not implemented for other values!
+  m_bg_threshold = 0.75f;                //1-cf from the paper
+  m_variance = 36.0f;                        // variance for the new mode
+  m_complexity_prior = 0.05f;        // complexity reduction prior constant
 
   // GMM for each pixel
   m_modes = new GMM[m_params.Size()*m_params.MaxModes()];
@@ -336,8 +336,8 @@ void ZivkovicAGMM::SubtractPixel(long posPixel, const RgbPixel& pixel, unsigned 
 //  data - a pointer to the data of a RGB image of the same size
 //Output:
 //  output - a pointer to the data of a gray value image of the same size 
-//					(the memory should already be reserved) 
-//					values: 255-foreground, 125-shadow, 0-background
+//                    (the memory should already be reserved)
+//                    values: 255-foreground, 125-shadow, 0-background
 ///////////////////////////////////////////////////////////////////////////////
 void ZivkovicAGMM::Subtract(int frame_num, const RgbImage& data,
   BwImage& low_threshold_mask, BwImage& high_threshold_mask)

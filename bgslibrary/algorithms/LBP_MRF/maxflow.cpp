@@ -5,10 +5,10 @@
 /*
 special constants for node->parent
 */
-#define TERMINAL ( (arc *) 1 )		/* to terminal */
-#define ORPHAN   ( (arc *) 2 )		/* orphan */
+#define TERMINAL ( (arc *) 1 )        /* to terminal */
+#define ORPHAN   ( (arc *) 2 )        /* orphan */
 
-#define INFINITE_D 1000000000		/* infinite distance to the terminal */
+#define INFINITE_D 1000000000        /* infinite distance to the terminal */
 
 /***********************************************************************/
 

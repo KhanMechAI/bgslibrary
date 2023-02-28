@@ -6,11 +6,11 @@
 // opencv legacy includes
 #include "OpenCvLegacyIncludes.h"
 
-#define BINARY_PATTERM_ELEM(c1, c2, offset)	\
+#define BINARY_PATTERM_ELEM(c1, c2, offset)    \
   ((float)(c2)-(float)(c1)+offset > 0)
 
 /*
-#define BINARY_PATTERM_ELEM(c1, c2, offset)	\
+#define BINARY_PATTERM_ELEM(c1, c2, offset)    \
 ( fabsf((float)(c2)-(float)(c1)) <= offset ? 1 : (float)(c2)-(float)(c1) >=0 )
 */
 
@@ -43,9 +43,9 @@ namespace bgslibrary
       /************************************************************************/
       typedef struct _LBP
       {
-        float* bg_pattern;			/* the average local binary pattern of background mode */
-        float* bg_intensity;			/* the average color intensity of background mode */
-        float* max_intensity;			/* the maximal color intensity of background mode */
+        float* bg_pattern;            /* the average local binary pattern of background mode */
+        float* bg_intensity;            /* the average color intensity of background mode */
+        float* max_intensity;        	/* the maximal color intensity of background mode */
         float* min_intensity;			/* the minimal color intensity of background mode */
         float weight;				/* the weight of background mode, i.e. probability that the background mode belongs to background */
         float max_weight;			/* the maximal weight of background mode */

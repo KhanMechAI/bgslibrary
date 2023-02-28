@@ -362,8 +362,8 @@ void PerformanceUtils::ImageROC(IplImage *image, IplImage* ground_truth, bool sa
 
         if ((freq[i][3] + freq[i][0] != 0.0) && (freq[i][2] + freq[i][1] != 0.0)) {
           freq[i][4] = freq[i][3] / (freq[i][3] + freq[i][0]);  // FNR = FN / (TP + FN);
-          freq[i][5] = freq[i][2] / (freq[i][2] + freq[i][1]);	// FPR = FP / (FP + TN);
-          freq[i][6] = freq[i][0] / (freq[i][0] + freq[i][3]);	// DR = TP / (TP+FN);
+          freq[i][5] = freq[i][2] / (freq[i][2] + freq[i][1]);    // FPR = FP / (FP + TN);
+          freq[i][6] = freq[i][0] / (freq[i][0] + freq[i][3]);    // DR = TP / (TP+FN);
 
           //printf(" FPR:%1.5f, FNR:%1.5f, D:%1.5f\n", freq[i][5], freq[i][4], freq[i][6]);
           ////fprintf(f," %4d     %1.6f     %1.6f\n",i,freq[i][5],freq[i][4]);

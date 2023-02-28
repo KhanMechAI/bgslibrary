@@ -84,8 +84,8 @@ void AdaptiveMedianBGS::SubtractPixel(int r, int c, const RgbPixel& pixel,
 //  data - a pointer to the image data
 //Output:
 //  output - a pointer to the data of a gray value image
-//					(the memory should already be reserved) 
-//					values: 255-foreground, 0-background
+//                    (the memory should already be reserved)
+//                    values: 255-foreground, 0-background
 ///////////////////////////////////////////////////////////////////////////////
 void AdaptiveMedianBGS::Subtract(int frame_num, const RgbImage& data,
   BwImage& low_threshold_mask, BwImage& high_threshold_mask)

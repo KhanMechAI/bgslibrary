@@ -27,8 +27,8 @@ namespace bgslibrary
       float m_low_threshold;
       float m_high_threshold;
 
-      int m_history_size;			// number frames used to create eigenspace
-      int m_dim;							// eigenspace dimensionality
+      int m_history_size;            // number frames used to create eigenspace
+      int m_dim;                            // eigenspace dimensionality
     };
 
     // --- Eigenbackground BGS algorithm ---

@@ -12,7 +12,7 @@ namespace bgslibrary
         const int M = 3;      // width SOM (per pixel)
         const int N = 3;      // height SOM (per pixel)
         const int KERNEL = 3; // size Gaussian kernel
-        const bool SPAN_NEIGHBORS = false; // true if update neighborhood spans different pixels			//
+        const bool SPAN_NEIGHBORS = false; // true if update neighborhood spans different pixels            //
         const int TRAINING_STEPS = 100;    // number of training steps
         const double EPS1 = 100.0; // model match distance during training
         const double EPS2 = 20.0;  // model match distance

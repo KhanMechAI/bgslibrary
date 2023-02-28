@@ -55,7 +55,7 @@ namespace bgslibrary
 
         if (m_pHist != NULL)
         {
-          //		fVal = (m_nBinCount != 0) ? (float)(1.0 / (double)m_nBinCount) : (float)0.0;
+          //        fVal = (m_nBinCount != 0) ? (float)(1.0 / (double)m_nBinCount) : (float)0.0;
           fVal = 0.0;
 
           for (int i = 0; i < m_nBinCount; ++i)

@@ -79,7 +79,7 @@ namespace bgslibrary
           inline double Area() const { return area; }
           inline double Perimeter() const { return perimeter; }
           inline double ExternPerimeter() const { return externPerimeter; }
-          inline int	  Exterior() const { return exterior; }
+          inline int      Exterior() const { return exterior; }
           inline double Mean() const { return mean; }
           inline double StdDev() const { return stddev; }
           inline double MinX() const { return minx; }
@@ -133,7 +133,7 @@ namespace bgslibrary
           //! àrea de memòria on es desaran els punts de contorn del blob
           //! storage which contains the edges of the blob
           CvMemStorage *m_storage;
-          //!	Sequència de punts del contorn del blob
+          //!    Sequència de punts del contorn del blob
           //! Sequence with the edges of the blob
           CvSeq *edges;
 

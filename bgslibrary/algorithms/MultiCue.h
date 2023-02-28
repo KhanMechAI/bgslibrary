@@ -34,7 +34,7 @@ namespace bgslibrary
       };
       //1) Bounding Box Structure
       struct BoundingBoxInfo {
-        int m_iBoundBoxNum;										//# of bounding boxes for all foreground and false-positive blobs
+        int m_iBoundBoxNum;                						//# of bounding boxes for all foreground and false-positive blobs
         int m_iArraySize;										//the size of the below arrays to store bounding box information
 
         short *m_aLeft, *m_aRight, *m_aUpper, *m_aBottom;		//arrays to store bounding box information for (the original frame size)

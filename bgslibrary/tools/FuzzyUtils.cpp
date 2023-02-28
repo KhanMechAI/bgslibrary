@@ -258,7 +258,7 @@ void FuzzyUtils::getFuzzyIntegralSugeno(IplImage* H, IplImage* Delta, int n, flo
 {
   // MeasureG : est un vecteur contenant 3 mesure g (g1,g2,g3) tel que : g1+g2+g3=1
   // n : =2 cad aggreger les 2 images "H" et "Delta"
-  //	   =1 cad aggreger uniquement les valeurs des composantes couleurs de l'image "Delta"
+  //       =1 cad aggreger uniquement les valeurs des composantes couleurs de l'image "Delta"
 
   PixelUtils p;
 
@@ -313,7 +313,7 @@ void FuzzyUtils::getFuzzyIntegralChoquet(IplImage* H, IplImage* Delta, int n, fl
 {
   // MeasureG : est un vecteur contenant 3 mesure g (g1,g2,g3) tel que : g1+g2+g3=1
   // n : =2 cad aggreger les 2 images "H" et "Delta"
-  //	   =1 cad aggreger uniquement les valeurs des composantes couleurs de l'image "Delta"
+  //       =1 cad aggreger uniquement les valeurs des composantes couleurs de l'image "Delta"
 
   PixelUtils p;
 

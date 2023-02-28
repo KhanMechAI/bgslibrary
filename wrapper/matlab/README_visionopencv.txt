@@ -43,8 +43,8 @@ In addition to the files and folders required by the support package installer,
 the package contains the following folder:
 
 example: Six subfolders containing examples. Each subfolder contains source 
-	 file that calls the OpenCV function and the test script to test the 
-	 generated mex file.
+     file that calls the OpenCV function and the test script to test the
+     generated mex file.
 
 UTILITY FUNCTIONS
 -----------------

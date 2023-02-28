@@ -81,24 +81,24 @@ namespace bgslibrary
         /* node structure */
         typedef struct node_st
         {
-          arc_st			*first;		/* first outcoming arc */
+          arc_st            *first;        /* first outcoming arc */
 
-          arc_st			*parent;	/* node's parent */
-          node_st			*next;		/* pointer to the next active node
+          arc_st            *parent;    /* node's parent */
+          node_st            *next;        /* pointer to the next active node
                             (or to itself if it is the last node in the list) */
-          int				TS;			/* timestamp showing when DIST was computed */
-          int				DIST;		/* distance to the terminal */
-          short			is_sink;	/* flag showing whether the node is in the source or in the sink tree */
+          int                TS;            /* timestamp showing when DIST was computed */
+          int                DIST;        /* distance to the terminal */
+          short            is_sink;    /* flag showing whether the node is in the source or in the sink tree */
 
-          captype			tr_cap;		/* if tr_cap > 0 then tr_cap is residual capacity of the arc SOURCE->node
+          captype            tr_cap;        /* if tr_cap > 0 then tr_cap is residual capacity of the arc SOURCE->node
                             otherwise         -tr_cap is residual capacity of the arc node->SINK */
         } node;
 
         /* arc structure */
         typedef struct arc_st
         {
-          node_st			*head;		/* node the arc points to */
-          arc_st			*next;		/* next arc with the same originating node */
+          node_st            *head;        /* node the arc points to */
+          arc_st            *next;		/* next arc with the same originating node */
           arc_st			*sister;	/* reverse arc */
 
           captype			r_cap;		/* residual capacity */

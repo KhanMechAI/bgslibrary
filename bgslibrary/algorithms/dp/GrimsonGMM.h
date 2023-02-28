@@ -17,7 +17,7 @@ namespace bgslibrary
       float muG;
       float muB;
       float weight;
-      float significants;		// this is equal to weight / standard deviation and is used to
+      float significants;        // this is equal to weight / standard deviation and is used to
       // determine which Gaussians should be part of the background model
     } GMM;
 

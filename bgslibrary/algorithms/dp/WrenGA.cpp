@@ -121,8 +121,8 @@ void WrenGA::SubtractPixel(int r, int c, const RgbPixel& pixel,
 //  data - a pointer to the data of a RGB image of the same size
 //Output:
 //  output - a pointer to the data of a gray value image of the same size 
-//					(the memory should already be reserved) 
-//					values: 255-foreground, 125-shadow, 0-background
+//                    (the memory should already be reserved)
+//                    values: 255-foreground, 125-shadow, 0-background
 ///////////////////////////////////////////////////////////////////////////////
 void WrenGA::Subtract(int frame_num, const RgbImage& data,
   BwImage& low_threshold_mask, BwImage& high_threshold_mask)

@@ -47,10 +47,10 @@ namespace bgslibrary
         m_params = (T2FMRFParams&)param;
 
         // Tbf - the threshold
-        m_bg_threshold = 0.75f;	// 1-cf from the paper
+        m_bg_threshold = 0.75f;    // 1-cf from the paper
 
         // Tgenerate - the threshold
-        m_variance = 36.0f;		// sigma for the new mode
+        m_variance = 36.0f;        // sigma for the new mode
 
         // GMM for each pixel
         m_modes = new GMM[m_params.Size()*m_params.MaxModes()];
@@ -290,7 +290,7 @@ namespace bgslibrary
           m_modes[pos].muG = pixel.ch[1];
           m_modes[pos].muB = pixel.ch[2];
           m_modes[pos].variance = m_variance;
-          m_modes[pos].significants = 0;			// will be set below
+          m_modes[pos].significants = 0;            // will be set below
 
           if (numModes == 1)
             m_modes[pos].weight = 1;
@@ -378,8 +378,8 @@ namespace bgslibrary
       //  data - a pointer to the data of a RGB image of the same size
       //Output:
       //  output - a pointer to the data of a gray value image of the same size 
-      //					(the memory should already be reserved) 
-      //					values: 255-foreground, 125-shadow, 0-background
+      //                    (the memory should already be reserved)
+      //                    values: 255-foreground, 125-shadow, 0-background
       ///////////////////////////////////////////////////////////////////////////////
       void T2FMRF::Subtract(int frame_num, const RgbImage& data,
         BwImage& low_threshold_mask, BwImage& high_threshold_mask)

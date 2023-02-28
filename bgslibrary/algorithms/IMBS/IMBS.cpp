@@ -278,7 +278,7 @@ void BackgroundSubtractorIMBS::hsvSuppression() {
 void BackgroundSubtractorIMBS::createBg(unsigned int bg_sample_number) {
   if (!bgSample.data) {
     //cerr << "createBg -- an error occurred: " <<
-    //		" unable to retrieve frame no. " << bg_sample_number << endl;
+    //        " unable to retrieve frame no. " << bg_sample_number << endl;
 
     //TODO vedere gestione errori
     abort();
@@ -533,19 +533,19 @@ Mat BackgroundSubtractorIMBS::convertImageRGBtoHSV(const Mat& imageRGB)
   //exit(1);
   //}
 
-  int h = imageRGB.rows;		// Pixel height.
-  int w = imageRGB.cols;		// Pixel width.
-  //int rowSizeRGB = imageRGB->widthStep;	// Size of row in bytes, including extra padding.
-  //char *imRGB = imageRGB->imageData;	// Pointer to the start of the image pixels.
-  //int rowSizeHSV = imageHSV->widthStep;	// Size of row in bytes, including extra padding.
-  //char *imHSV = imageHSV->imageData;	// Pointer to the start of the image pixels.
+  int h = imageRGB.rows;        // Pixel height.
+  int w = imageRGB.cols;        // Pixel width.
+  //int rowSizeRGB = imageRGB->widthStep;    // Size of row in bytes, including extra padding.
+  //char *imRGB = imageRGB->imageData;    // Pointer to the start of the image pixels.
+  //int rowSizeHSV = imageHSV->widthStep;    // Size of row in bytes, including extra padding.
+  //char *imHSV = imageHSV->imageData;    // Pointer to the start of the image pixels.
   for (int y = 0; y < h; ++y) {
     for (int x = 0; x < w; ++x) {
       // Get the RGB pixel components. NOTE that OpenCV stores RGB pixels in B,G,R order.
       //uchar *pRGB = (uchar*)(imRGB + y*rowSizeRGB + x*3);
-      int bB = imageRGB.at<Vec3b>(y, x)[0]; //*(uchar*)(pRGB+0);	// Blue component
-      int bG = imageRGB.at<Vec3b>(y, x)[1]; //*(uchar*)(pRGB+1);	// Green component
-      int bR = imageRGB.at<Vec3b>(y, x)[2]; //*(uchar*)(pRGB+2);	// Red component
+      int bB = imageRGB.at<Vec3b>(y, x)[0]; //*(uchar*)(pRGB+0);    // Blue component
+      int bG = imageRGB.at<Vec3b>(y, x)[1]; //*(uchar*)(pRGB+1);    // Green component
+      int bR = imageRGB.at<Vec3b>(y, x)[2]; //*(uchar*)(pRGB+2);    // Red component
 
       // Convert from 8-bit integers to floats.
       fR = bR * BYTE_TO_FLOAT;
@@ -594,7 +594,7 @@ Mat BackgroundSubtractorIMBS::convertImageRGBtoHSV(const Mat& imageRGB)
         }
       }
       fDelta = fMax - fMin;
-      fV = fMax;				// Value (Brightness).
+      fV = fMax;        		// Value (Brightness).
       if (iMax != 0) {			// Make sure its not pure black.
         fS = fDelta / fMax;		// Saturation.
         float ANGLE_TO_UNIT = 1.0f / (6.0f * fDelta);	// Make the Hues between 0.0 to 1.0 instead of 6.0

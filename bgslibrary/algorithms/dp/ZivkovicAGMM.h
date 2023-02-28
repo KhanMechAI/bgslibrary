@@ -88,7 +88,7 @@ namespace bgslibrary
       float m_complexity_prior;
 
       //data
-      int m_num_bands;	//only RGB now ==3
+      int m_num_bands;    //only RGB now ==3
 
       // dynamic array for the mixture of Gaussians
       GMM* m_modes;

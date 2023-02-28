@@ -36,7 +36,7 @@ void DPMean::process(const cv::Mat &img_input, cv::Mat &img_output, cv::Mat &img
 
     params.SetFrameSize(width, height);
     params.LowThreshold() = threshold; //3*30*30; // 2700
-    params.HighThreshold() = 2 * params.LowThreshold();	// Note: high threshold is used by post-processing
+    params.HighThreshold() = 2 * params.LowThreshold();    // Note: high threshold is used by post-processing
     //params.Alpha() = 1e-6f;
     params.Alpha() = alpha;
     params.LearningFrames() = learningFrames;//30;

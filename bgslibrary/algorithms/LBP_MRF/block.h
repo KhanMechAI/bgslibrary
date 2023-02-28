@@ -91,17 +91,17 @@ namespace bgslibrary
 
         typedef struct block_st
         {
-          Type					*current, *last;
-          struct block_st			*next;
-          Type					data[1];
+          Type                    *current, *last;
+          struct block_st            *next;
+          Type                    data[1];
         } block;
 
-        int		block_size;
-        block	*first;
-        block	*last;
+        int        block_size;
+        block    *first;
+        block    *last;
 
-        block	*scan_current_block;
-        Type	*scan_current_data;
+        block    *scan_current_block;
+        Type    *scan_current_data;
 
         void(*error_function)(char *);
       };
@@ -157,18 +157,18 @@ namespace bgslibrary
 
         typedef union block_item_st
         {
-          Type			t;
-          block_item_st	*next_free;
+          Type            t;
+          block_item_st    *next_free;
         } block_item;
 
         typedef struct block_st
         {
-          struct block_st			*next;
-          block_item				data[1];
+          struct block_st            *next;
+          block_item                data[1];
         } block;
 
-        int			block_size;
-        block		*first;
+        int            block_size;
+        block    	*first;
         block_item	*first_free;
 
         void(*error_function)(char *);

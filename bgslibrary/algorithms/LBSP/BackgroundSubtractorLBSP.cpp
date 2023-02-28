@@ -15,9 +15,9 @@
 
 #ifndef SIZE_MAX
 # if __WORDSIZE == 64
-#  define SIZE_MAX		(18446744073709551615UL)
+#  define SIZE_MAX        (18446744073709551615UL)
 # else
-#  define SIZE_MAX		(4294967295U)
+#  define SIZE_MAX        (4294967295U)
 # endif
 #endif
 

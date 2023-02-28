@@ -35,7 +35,7 @@ namespace bgslibrary
         unsigned char TemporalMaskTop;
 
         unsigned int *AccMask;
-        unsigned int ResetMaskTh;	// Max continous duration a pixel can be detected before
+        unsigned int ResetMaskTh;    // Max continous duration a pixel can be detected before
         // it is forced to be updated...
 
         double *weights;

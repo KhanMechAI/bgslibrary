@@ -39,7 +39,7 @@ namespace bgslibrary
         double m_T;
 
         MOGDATA* m_pMOG;
-        int* m_pK;				// number of distributions per pixel
+        int* m_pK;                // number of distributions per pixel
 
         void Init();
         void Update();

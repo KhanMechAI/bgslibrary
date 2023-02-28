@@ -209,7 +209,7 @@ void PratiMediodBGS::CalculateMasks(int r, int c, const RgbPixel& pixel)
 //  data - a pointer to the data of a RGB image of the same size
 //Output:
 //  output - a pointer to the data of a gray value image of the same size 
-//					values: 255-foreground, 0-background
+//                    values: 255-foreground, 0-background
 ///////////////////////////////////////////////////////////////////////////////
 void PratiMediodBGS::Subtract(int frame_num, const RgbImage& data,
   BwImage& low_threshold_mark, BwImage& high_threshold_mark)
